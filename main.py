@@ -28,7 +28,10 @@ def download_and_process_url(url):
 
 
 def get_corpus(url):
-    file_path = "corpus.txt"
+    start_index = url.find("https://www") + len("https://www")
+    file_prefix = url[start_index:start_index + 5]
+    file_path = f"corpus_{file_prefix}.txt"
+
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             return f.read()
