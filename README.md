@@ -2,7 +2,7 @@
 This project enables users to extract information and answer questions from web pages using a combination of several NLP models and techniques.
 
 # Why all-MiniLM-L6-v2?
-- Speed and accuracy
+- Speed and score
 ![Why](https://github.com/Yoniqueeml/Ragnetic_QA/blob/master/WhyMiniLm6.png)
 
 # Gradio interface
